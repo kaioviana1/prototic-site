@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img style="width: 150px;" src="/logo-grupo-ddlimp.png" alt=""></div>
+           
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#ddlimp">DDLIMP</a></li>
+                    <li><a href="#bg">BG</a></li>
+                    <li><a href="#ddmar">DDMAR</a></li>
+                    <li><a href="#sobre-nos-section">Sobre Nós</a></li>
+                    <li><a href="#contato-section">Contato</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+    </header>
+
+    <section class="hero" id="home">
+        <div class="overlay">
+            <h1>Bem-vindo ao GrupoDDLIMP</h1>
+            <p id="effect-phrase">Sua satisfação é nossa prioridade</p>
+        </div>
+    </section>
+
+    <section id="sobre-nos-section" class="about-us">
+        <div class="container">
+            <div class="about-us-image">
+                <!-- Espaço reservado para a imagem -->
+                <iframe width="560" height="400" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="about-us-text">
+                <h2>Nossa História</h2>
+                <p>
+                    O GrupoDDLIMP foi fundado em 1990 com a missão de fornecer serviços de limpeza de alta qualidade. Com mais de 30 anos de experiência, nos orgulhamos de ser líderes no setor, oferecendo soluções inovadoras e sustentáveis. Nossa equipe é dedicada e altamente treinada, garantindo a satisfação de nossos clientes em cada projeto. Estamos comprometidos com a excelência e continuamos a crescer e evoluir para atender às necessidades de um mercado em constante mudança.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            
+            <div class="service-group" id="ddlimp">
+                <h3>DDLIMP</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 1">
+                        <p>Serviço de Limpeza Industrial</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 2">
+                        <p>Limpeza Residencial</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 3">
+                        <p>Serviço de Limpeza Comercial</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-group" id="bg">
+                <h3>BG</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 1">
+                        <p>Consultoria Ambiental</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 2">
+                        <p>Reciclagem de Resíduos</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 3">
+                        <p>Gestão de Resíduos</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-group" id="ddmar">
+                <h3>DDMAR</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 1">
+                        <p>Limpeza de Embarcações</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 2">
+                        <p>Manutenção Marítima</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Serviço 3">
+                        <p>Serviços de Salvamento Marítimo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato-section" class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Fale Conosco</h2>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+                <p><strong>Email:</strong> contato@grupoddlmp.com.br</p>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123, São Paulo, SP</p>
+                <hr>
+                <p>Siga-nos nas redes sociais:</p>
+                <p>
+                    <a href="#"><i class="fab fa-instagram"></i> Instagram</a><br>
+                    <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                </p>
+            </div>
+            <div class="contact-form">
+                <h2>Envie uma Mensagem</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="text" id="whatsapp" name="whatsapp" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-info">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, São Paulo, SP</p>
+                <p><i class="fas fa-phone-alt"></i> (11) 1234-5678</p>
+                <p><i class="fab fa-whatsapp"></i> (11) 98765-4321</p>
+                <p><i class="far fa-envelope"></i> contato@grupoddlmp.com.br</p>
+            </div>
+            <div class="footer-social">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Assine nossa Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Seu email">
+                    <button type="submit">Assinar</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

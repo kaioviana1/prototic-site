@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adiciona espaçamento lateral */
+}
+
+header {
+    background: linear-gradient(to right, #003366, #3399ff);
+    padding: 10px 0;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: white;
+    transition: width 0.2s ease, background-color 0.2s ease;
+    -webkit-transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+    background: white;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+}
+
+.hero {
+    
+    position: relative;
+    height: 400px;
+    background: url('/agua-potavel.jpg') no-repeat center center/cover; /* Imagem de fundo aleatória */
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Escurecendo a imagem de fundo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 0;
+    cursor: pointer;
+}
+
+.about-us {
+    display: flex;
+    height: 400px;
+}
+
+.about-us .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-image {
+    flex: 1;
+    background: #e0e0e0; /* Espaço reservado para a imagem */
+    
+}
+
+
+.about-us-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.about-us-text h2 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.about-us-text p {
+    margin: 0;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.about-us-text p:hover {
+    color: #003366; /* Cor ao passar o mouse */
+}
+
+.services {
+    background: #f5f5f5;
+    padding: 40px 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.service-group {
+    margin-bottom: 40px;
+}
+
+.service-group h3 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%; /* Largura dos cards para caber três lado a lado */
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 20px;
+    font-size: 16px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.contact-info hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #3399ff;
+}
+
+button[type="submit"] {
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2673cc;
+}
+/* Estilo do footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 0;
+}
+
+.container-footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info,
+.footer-social,
+.footer-newsletter {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-info h3,
+.footer-social h3,
+.footer-newsletter h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-social ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-social ul li a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-newsletter form {
+    display: flex;
+}
+
+.footer-newsletter input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.footer-newsletter button[type="submit"] {
+    background-color: #ffcc00;
+    color: #003366;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-newsletter button[type="submit"]:hover {
+    background-color: #ffdb4d;
+}
+/* Adicione as seguintes regras de mídia ao final do seu arquivo styles.css */
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about-us .container {
+        flex-direction: column;
+    }
+
+    .about-us-text {
+        padding: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .contact-info,
+    .contact-form {
+        text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .footer-info p,
+    .footer-newsletter p {
+        font-size: 14px;
+    }
+}
